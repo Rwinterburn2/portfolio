@@ -11,6 +11,8 @@ const projects: Project[] = [
   { title: 'Project 1', description: 'Description of Project 1', link: '#' },
   { title: 'Project 2', description: 'Description of Project 2', link: '#' },
   { title: 'Project 3', description: 'Description of Project 3', link: '#' },
+  { title: 'Project 4', description: 'Description of Project 3', link: '#' },
+
 ];
 
 const Projects: React.FC = () => {

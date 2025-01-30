@@ -1,68 +1,172 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+/* Header container */
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+/* Apply the font globally */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  margin: 0;
+  font-family: 'Inter', sans-serif;  /* Use Inter as default font */
+}
 
-  place-items: center;
-  min-width: 320px;
+body {background-color: rgb(0, 0, 0);}
+
+header {
+  background-color: rgb(51, 51, 51); /* Grey background for header */
+  padding: 30px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-radius: 10px; 
+  border: 3px solid transparent; /* Make the border space transparent */
+  border-image: linear-gradient(to left, #00aaff, #ff00cc) 5; /* Gradient border */
+}
+
+
+/* Navigation container */
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* List items */
+nav ul li {
+  margin: 0 20px;
+}
+
+/* Link styles */
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+nav ul li a:hover {
+  transform: translateY(-5px);
+}
+
+
+/* #about Section */
+#about {
+  background: black;  /* Grey to purple gradient */
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   min-height: 100vh;
 }
 
+
+
+
+/* Headings */
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-align: center;
+  
+  /* Gradient as background image */
+  background: linear-gradient(to right, #a5006e, #ffffff);
+  
+  /* Apply the background to the text only */
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  /* Set the text color to transparent so the background shows through */
+  color: transparent;
+  transition: background 1s ease-in;
+}
+h1:hover {
+  background: linear-gradient(to left, #00aaff, #ff00cc);
+    /* Apply the background to the text only */
+    -webkit-background-clip: text;
+    background-clip: text; /* New gradient */
+    transition: background 1s ease;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+/* Paragraphs */
+p {text-align: center;
+  font-size: 1.2em;
+  line-height: 1.5;
+  padding: 10px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+
+
+/* Images */
+/* Default styles for the image */
+img {
+  border-radius: 10px;
+  padding: 5px; /* Creates space for the border */
+  background-image: linear-gradient(to left, #00aaff, #ff00cc); /* Initial gradient background */
+  box-shadow: 0px 15px 20px rgba(165, 0, 110, 0.5); /* Optional box shadow */
+  transition: background-image 0.5s ease, box-shadow 0.5s ease; /* Animate gradient and box-shadow */
+}
+
+/* Hover effect for the image */
+/* Default styles for the image */
+img {
+  border-radius: 10px;
+  padding: 5px; /* Creates space for the border */
+  background-image: linear-gradient(to left, #00aaff, #ff00cc); /* Initial gradient background */
+  box-shadow: 0px 15px 20px rgba(165, 0, 110, 0.5); /* Optional box shadow */
+  transition: box-shadow 0.5s ease; /* Animate box-shadow only */
+}
+
+/* Hover effect for the image */
+img:hover {
+  animation: gradientCycle 3s infinite ease-in-out; /* Apply the gradient animation */
+  box-shadow: 0px 15px 20px rgba(165, 0, 110, 0.7); /* Optional change in shadow on hover */
+}
+
+/* Keyframes to cycle through different colors */
+@keyframes gradientCycle {
+  0% {
+    background-image: linear-gradient(to left, #00aaff, #ff00cc); /* First gradient */
   }
-  a:hover {
-    color: #747bff;
+  25% {
+    background-image: linear-gradient(to left, #ff00cc, #00aaff); /* Second gradient */
   }
-  button {
-    background-color: #f9f9f9;
+  50% {
+    background-image: linear-gradient(to left, #7f00ff, #ff7f00); /* Third gradient */
+  }
+  75% {
+    background-image: linear-gradient(to left, #ff7f00, #7f00ff); /* Fourth gradient */
+  }
+  100% {
+    background-image: linear-gradient(to left, #00aaff, #ff00cc); /* First gradient again */
+  }
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #about {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  section {
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
