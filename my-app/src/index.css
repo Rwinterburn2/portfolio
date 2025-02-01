@@ -28,6 +28,10 @@ header {
   border-image: linear-gradient(to left, #00aaff, #ff00cc) 5; /* Gradient border */
 }
 
+#project-link { border-radius: 10px; 
+  border: 3px solid transparent; /* Make the border space transparent */
+  border-image: linear-gradient(to left, #00aaff, #ff00cc) 5;
+}
 
 /* Navigation container */
 nav ul {
@@ -153,6 +157,54 @@ img:hover {
   }
 }
 
+/* Ensure the section takes full width */
+/* Services Section */
+
+
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Container to hold all cards */
+.cards-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically */
+  align-items: center; /* Center the cards */
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual card styling */
+.card {
+  width: 100%; /* Make cards full-width or specify a fixed width */
+  max-width: 350px; /* Limit the card size */
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ddd; /* Border around the card */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.card:hover {
+  transform: translateY(-10px); /* Slight lift effect on hover */
+}
+
+/* Style for links in the card */
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
 
 
 

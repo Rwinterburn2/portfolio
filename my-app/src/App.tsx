@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './App.css';
+import Services from './components/Services';
 
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
             <Route path="/contact" element={<>
               <About />
               <Contact />
+              
               
               </>} />
           </Routes>

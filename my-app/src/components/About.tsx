@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import Services from './Services';
+
 
 const About: React.FC = () => {
-  return (
+  return (<>
     <motion.div
       id="about"
       initial={{ opacity: 0, y: -50 }}
@@ -43,6 +45,8 @@ const About: React.FC = () => {
         />
       </section>
     </motion.div>
+    <Services />
+    </>
   );
 };
 
