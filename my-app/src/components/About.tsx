@@ -35,7 +35,7 @@ const About: React.FC = () => {
       {/* Profile Image Section */}
       <section style={{ width: '40%' }}>
         <img 
-          src="/src/assets/media/jackcarr.jpg" 
+          src="./src/assets/media/jackcarr.jpg" 
           alt="Rob's Profile" 
           style={{
             width: '100%',

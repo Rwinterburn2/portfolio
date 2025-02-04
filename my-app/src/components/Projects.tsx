@@ -9,10 +9,10 @@ interface Project {
 }
 
 const projects: Project[] = [
-  { title: 'Photography Website', description: 'Description of Project 1', link: '#', image: './src/assets/media/photositew.png' },
-  { title: 'Javascript Quiz', description: 'Description of Project 2', link: '#', image: './src/assets/media/oscarssite.png' },
-  { title: 'Django Website', description: 'Description of Project 3', link: '#', image: './src/assets/media/gigreviews.png' },
-  { title: 'Royalty Free Instrumental Website', description: 'Description of Project 4', link: '#', image: './src/assets/media/beatssite.png' },
+  { title: 'Photography Website', description: 'Description of Project 1', link: 'https://github.com/RWinterburn/PP1', image: './src/assets/media/photositew.png' },
+  { title: 'Javascript Quiz', description: 'Description of Project 2', link: 'https://github.com/RWinterburn/OscarsQuiz', image: './src/assets/media/oscarssite.png' },
+  { title: 'Django Website', description: 'Description of Project 3', link: 'https://github.com/RWinterburn/Project-3', image: './src/assets/media/gigreviews.png' },
+  { title: 'Royalty Free Instrumental Website', description: 'Description of Project 4', link: 'https://github.com/RWinterburn/ci-project-4', image: './src/assets/media/beatssite.png' },
   { title: 'Actors Website', description: 'A basic website made for actors', link: 'https://github.com/Rwinterburn2/actors-website', image: './src/assets/media/actorssite.png' },
   { title: 'Music Website', description: 'Music landing page, with gallery and following concept art, (still under construction)', link: 'https://github.com/RWinterburn/Music-website', image: './src/assets/media/musicsite.png' },
 ];

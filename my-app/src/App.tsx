@@ -6,7 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import './App.css';
-import Services from './components/Services';
+import Footer from './components/Footer';
 
 
 const App: React.FC = () => {
@@ -19,14 +19,11 @@ const App: React.FC = () => {
             {/* Define the route for each component */}
             <Route path="/" element={<About />} />
             <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<>
-              <About />
-              <Contact />
-              
-              
-              </>} />
+            <Route path="/contact" element={<Contact />} />
+
           </Routes>
         </main>
+        <Footer />
       </div>
     </Router>
   );

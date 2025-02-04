@@ -10,7 +10,7 @@ const Services: React.FC = () => {
 
   return (
     <motion.div
-      id="about"
+      id="services"
       ref={ref}
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : -50 }}
@@ -18,7 +18,7 @@ const Services: React.FC = () => {
       style={{
         backgroundColor: '#333',
         color: '#fff',
-        padding: '40px',
+        padding: '60px',
         borderRadius: '10px',
         display: 'flex',
         justifyContent: 'space-evenly',
@@ -32,6 +32,7 @@ const Services: React.FC = () => {
   flexDirection: 'column', 
   alignItems: 'center' // Centers flex children horizontally
 }}>
+  
   <h1>Technologies used: </h1>
   <ul style={{ 
     listStyle: 'none', // Removes default bullets
